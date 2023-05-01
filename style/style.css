@@ -7,17 +7,21 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     position: fixed;
-    background-color:rgb(255, 255, 255, 0.7);
-    padding: 0 5rem;
+    background-color:rgb(36, 45, 77);
+    padding: 0 30px;
+    color: #ffff;
+    top: 0;
 }
 
 .main-logo {
-    width: 25rem;
-    padding: 1rem 0;
+    width: 240px;
+    padding: 16px 16px 8px;
+    background-color: #ffff;
+    border-radius: 0 0 20px 20px;
+    margin-bottom: 16px;
 }
-
-
 
 .menu {
     display: flex;
@@ -37,29 +41,83 @@ header {
 
 .menu li {
     /* border: 1px solid #000; */
-    background-color: #242d4d;
+    background-color: rgb(36, 45, 77);
     border-radius: 0.5rem;
     padding: 0.6rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.tell-number {
     font-size: 2rem;
-    font-weight: 600;
-    color: rgba(255, 255, 255, 1);
+    text-decoration: none;
+    color: #ffff;
 }
-
-
-
+/* main 시작 */
 .main-content {
-    margin: 0 auto;
+    margin: 91px auto 0;
 }
 
-.img-scroll {
+/* 슬라이드 스타일 */
+.slide-wrap {
     width: 100%;
-    height: 100vh;
-    background-image: url(/src/image/월드메홈.jpg);
-    background-size: cover
-
+    height: calc(100vh - 91px);
+    overflow: hidden;
 }
 
-.main-contant article {
+.slide-list {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.slide-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: 100%;
+    
+    transform: translateX(0px);
+
+    flex-shrink: 0;
+
+    background-size: cover;
+    background-position: center center;
+    /* background-repeat: no-repeat; */
+    /* background-attachment: fixed; */
+    /* transition: 1s; */
+}
+
+.slide-content.item1 {
+    background-image: url(/src/image/월드메홈.jpg);
+}
+
+.slide-content.item2 {
+    background-image: url(/src/image/월드메홈2.jpg);
+}
+
+.slide-pagination {
+    display: flex;
+    gap: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.slide-pagination > li {
+    color: gray;
+    cursor: pointer;
+    font-size: 5rem;
+}
+
+.slide-pagination > li.active {
+    color: black;
+}
+
+.main-content article {
     margin: 3rem auto 0;
     display: flex;
     flex-direction: row;
@@ -70,7 +128,7 @@ header {
     border: 1px solid #000;
 }
 
-.main-contant article a {
+.main-content article a {
     text-decoration: none;
     color: #000;
     font-weight: 900;
