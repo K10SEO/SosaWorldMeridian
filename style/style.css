@@ -1,8 +1,19 @@
-:root {
-   
+@font-face {
+    font-family: 'TmonMonsori';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/TmonMonsori.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TAEBAEKmilkyway';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/TAEBAEKmilkyway.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
 }
 
 header {
+    font-family: 'TAEBAEKmilkyway';
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -13,6 +24,7 @@ header {
     padding: 0 30px;
     color: #ffff;
     top: 0;
+    z-index: 100;
 }
 
 .main-logo {
@@ -35,12 +47,14 @@ header {
     align-items: end;
     justify-content:center;
     gap: 2rem;
-    /* margin-top: 40px; */
-
+    & > li:hover {
+        cursor: pointer;
+        color: rgb(43 120 131);
+        transition-duration: 0.3s;
+    }
 }
 
 .menu li {
-    /* border: 1px solid #000; */
     background-color: rgb(36, 45, 77);
     border-radius: 0.5rem;
     padding: 0.6rem;
@@ -48,14 +62,19 @@ header {
     font-weight: 500;
 }
 
+
 .tell-number {
+    font-family: 'TmonMonsori';
     font-size: 2rem;
     text-decoration: none;
     color: #ffff;
 }
 /* main 시작 */
-.main-content {
-    margin: 91px auto 0;
+.warp {
+    margin-top: 91px;
+    font-family: 'TAEBAEKmilkyway';
+    font-weight: 900;
+    
 }
 
 /* 슬라이드 스타일 */
@@ -63,6 +82,7 @@ header {
     width: 100%;
     height: calc(100vh - 91px);
     overflow: hidden;
+    user-select: none;
 }
 
 .slide-list {
@@ -79,23 +99,11 @@ header {
     width: 100%;
     height: 100%;
     
-    transform: translateX(0px);
-
     flex-shrink: 0;
 
     background-size: cover;
     background-position: center center;
-    /* background-repeat: no-repeat; */
-    /* background-attachment: fixed; */
-    /* transition: 1s; */
-}
-
-.slide-content.item1 {
-    background-image: url(/src/image/월드메홈.jpg);
-}
-
-.slide-content.item2 {
-    background-image: url(/src/image/월드메홈2.jpg);
+    
 }
 
 .slide-pagination {
@@ -117,7 +125,168 @@ header {
     color: black;
 }
 
-.main-content article {
+.slide-img{
+    background-color: rgba(241, 241, 241, 0.6);
+    border-radius: 50px 50px 50px 50px;
+    padding: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    & > img {
+        width: 50rem;
+    }
+    & > img:nth-child(2){
+        width: 20rem;
+    }
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-content li,
+.main-content div {
+    margin: 100px auto 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    & > img {
+        margin-top: 50px;
+        width: 80rem;
+    }
+    & > h2 {
+        width: 350px;
+        font-size: 30px;
+        display: flex;
+        align-items: center;
+        border-bottom: 2px solid rgb(76, 98, 120);
+
+        & img:nth-child(1){
+            width: 150px;
+        }
+
+        & > span {
+            margin-left: 30px;
+        }
+    }
+}
+
+.main-content .logo-tell {
+    width: 40rem;
+    cursor: pointer;
+    border: 3px solid black;
+    padding: 20px 30px 30px;
+    border-radius: 50px 50px 50px 50px;
+    margin-top: 50px;
+}
+
+.top-icon{
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    color: rgb(76, 98, 120);
+    border-radius: 50%;
+    box-shadow: 5px 5px 20px -8px #000;
+    cursor: pointer;
+}
+
+footer{
+    background-color: rgb(36, 45, 77);
+    color: white;
+    text-align: center;
+    overflow: hidden;
+    padding: 70px;
+}
+
+footer dl {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.contact-form {
+    width: 514px;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    border-radius: 5px;
+
+    & > h1 {
+        margin-bottom: 1rem;
+        font-size: 2rem;
+        margin: 0 auto;
+        padding: 0 0 1rem;
+    }
+}
+
+.contact-form span {
+    color: red;
+    font-weight: bold;
+}
+
+.contact-form input[type=number],
+.contact-form #consultation,
+.contact-form #privacy{
+    width: 480px;
+    margin: 1rem 0;
+    padding: 10px;
+    box-shadow: 1px 1px 2px 1px #dadce0 inset;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    border-radius: 5px;
+    resize: vertical;
+    outline: none;
+}
+
+.contact-form button {
+    width: 10rem;
+    margin: 0 auto;
+}
+
+#contact {
+    height: 2rem;
+}
+
+#consultation {
+    height: 10rem;
+}
+
+#privacy {
+    height: 6rem;
+    overflow: scroll;
+    word-break: break-all;
+    -ms-overflow-style: none;
+
+    & > p {
+        width: 100%;
+        height: 100%;
+        font-size: small;
+    }
+}
+
+#privacy::-webkit-scrollbar {
+    display: none;
+}
+
+.checkBox-privacy{
+    display: flex;
+    align-items: center;
+    vertical-align: bottom;
+    gap: 3px;
+    font-size: 0.8rem;
+    margin-bottom: 3rem;
+    user-select: none;
+}
+
+/* .warp article {
     margin: 3rem auto 0;
     display: flex;
     flex-direction: row;
@@ -128,13 +297,15 @@ header {
     border: 1px solid #000;
 }
 
-.main-content article a {
+.warp article a {
     text-decoration: none;
     color: #000;
     font-weight: 900;
-}
+} */
 
-.number {
+/* .number {
     text-align: center;
-}
+} */
+
+
 

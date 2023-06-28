@@ -13,13 +13,17 @@
 
     <header>
         <h1 class="ir-hidden">월드메르디앙</h1>    
-        <img class="main-logo" src="/src/image/LOGO/20221117 - mainLogo2.png" alt="월드메르디앙 로고">
+        
+        <a href="#">
+            <img class="main-logo" src="/src/image/LOGO/20221117 - mainLogo2.png" alt="월드메르디앙 로고">
+        </a>
         <nav class="menu">
             <ul class="menu-list">
                 <li>사업개요</li>
-                <li>타입</li>
                 <li>입지환경</li>
-                <li>단지안내</li>
+                <li>개발호재</li>
+                <li>타입안내</li>
+                <li>모델하우스</li>
                 <!-- <li></li>
                 <li></li>
                 <li></li>
@@ -28,40 +32,138 @@
             </ul>
         </nav>
         <a href="tel:1661-3882" class="tell-number">1661-3822</a>
+        <img id="top-icon" class="ir-hidden" src="/src/image/icon/expand_less_FILL0_wght100_GRAD0_opsz48.svg">
     </header>
 
-    <main class="main-content">
+    <main class="warp">
         <!-- 최상단 이미지 스크롤 -->
         <div class="slide-wrap">
             <ul class="slide-list">
-                <li class="slide-content item1"></li>
-                <li class="slide-content item2"></li>
+                <!-- <li class="slide-content item1" style="background-image: url(/src/image/월드메홈.jpg) ;"></li>
+                <li class="slide-content item2"></li> -->
                 <ul class="slide-pagination"></ul>
             </ul>
+            <div class="slide-img">
+                <img src="./src/image/미래비전시작.png" alt="">
+                <a href="tel:1661-3882">
+                    <img src="./src/image/LOGO/상담문의로고.png" alt="">
+                </a>
+            </div>
         </div>
+        <section class="main-content">
+            <h1 class="ir-hidden">상품 소개</h1>
+            <div>
+                <img src="./src/image/프리미엄.png" alt="">
+                <a href="tel:1661-3882">
+                    <img class="logo-tell" src="./src/image/LOGO/상담문의로고.png" alt="">
+                </a>
 
-        <article>
-            <a href="tel:1661-3882">
-                <p class="number">대표전화</p>
-                <p>1661-3882</p>
-            </a>
-        </article>
+                <form class="contact-form" method="POST" data-email="dlawhdtj9801@gmail.com" action="https://script.google.com/macros/s/AKfycbyvwuek9UE_9B0mb89yuRdQvT6KkvXPfKmcHPgga7vxveqIehdxW8KYXCjBzOHnfE5Y/exec" >
+                    <h1>상담 예약 신청</h1>
+                    <div id="privacy">
+                        <p>
+                            1. 개인정보 수집 목적
+                            <br>
+                            문의 내역으로 상담
+                            <br>
+                            2. 개인정보 수집 항목
+                            <br>
+                            3. 개인정보 보유 및 이용기간
+                        </p>
+                    </div>
+                    <label class="checkBox-privacy" for="privacy-check" >
+                        <input id="privacy-check" type="checkbox" >
+                        위 사항을 확인하였으며 개인정보 수집 및 이용에 동의 합니다.
+                    </label>
 
-        <section class="contant-one">
-            <h1>사업소개</h1>
-            <!-- <img src="/src/image/사업 소개/20221117 - 월드메르디앙 소사 교육자료-1-3-page-00002.jpg" alt=""> -->
+                    <label for="contact">
+                        <span>*</span>
+                        연락처
+                    </label>
+                    <input id="contact" type="number" name="tellNumber" required>
+
+                    <label for="consultation">
+                        <span>*</span>
+                        상담 내용
+                    </label>
+                    <textarea name="consultation" id="consultation" cols="30" rows="10" required></textarea>
+
+                    <input type="submit">
+
+                </form>
+
+            </div>
+            <ul>
+                <li>
+                    <h2>
+                        <img src="./src/image/LOGO/레이어 3.png" alt="">
+                        <span>사업개요</span>
+                    </h2>
+                    <img src="./src/image/월드메홈2.jpg" alt="">
+                    <img src="./src/image/사업개요/사업개요.png" alt="">
+                    <img src="./src/image/사업개요/배치도.png" alt="">
+                </li>
+                <li>
+                    <h2>
+                        <img src="./src/image/LOGO/레이어 3.png" alt="">
+                        <span>입지환경</span>
+                    </h2>
+                    <img src="./src/image/입지환경/교통망.png" alt="">
+                    <img src="./src/image/입지환경/인프라.png" alt="">
+                    <img src="./src/image/입지환경/미래가치.png" alt="">
+                </li>
+                <li>
+                    <h2>
+                        <img src="./src/image/LOGO/레이어 3.png" alt="">
+                        <span>개발호재</span>
+                    </h2>
+                    <img src="./src/image/개발호재/지하철.png" alt="">
+                    <img src="./src/image/개발호재/서해선.png" alt="">
+                    <img src="./src/image/개발호재/GTX_B.png" alt="">
+                    <img src="./src/image/개발호재/대장홍대선.png" alt="">
+                    <img src="./src/image/개발호재/경인고속도로.png" alt="">
+                    <img src="./src/image/개발호재/부천대장지구.png" alt="">
+                </li>
+                <li>
+                    <h2>
+                        <img src="./src/image/LOGO/레이어 3.png" alt="">
+                        <span>타입안내</span>
+                    </h2>
+                    <img src="./src/image/타입안내/62A.png" alt="">
+                    <img src="./src/image/타입안내/59B.png" alt="">
+                    <img src="./src/image/타입안내/63C.png" alt="">
+                    <img src="./src/image/타입안내/63D.png" alt="">
+                    <img src="./src/image/타입안내/59E.png" alt="">
+                    <img src="./src/image/타입안내/62F.png" alt="">
+                </li>
+                <li>
+                    <h2>
+                        <img src="./src/image/LOGO/레이어 3.png" alt="">
+                        <span>모델하우스</span>
+                    </h2>
+                    <img src="./src/image/모델하우스/KakaoTalk_20230417_190029478_01.jpg" alt="">
+                    <img src="./src/image/모델하우스/KakaoTalk_20230417_190029478_02.jpg" alt="">
+                    <img src="./src/image/모델하우스/KakaoTalk_20230417_190029478_05.jpg" alt="">
+                    <img src="./src/image/모델하우스/KakaoTalk_20230417_190029478_08.jpg" alt="">
+                    <img src="./src/image/모델하우스/KakaoTalk_20230417_190029478_09.jpg" alt="">
+                    <img src="./src/image/모델하우스/KakaoTalk_20230417_190029478_10.jpg" alt="">
+                    <img src="./src/image/모델하우스/KakaoTalk_20230417_190029478_11.jpg" alt="">
+                    <img src="./src/image/모델하우스/KakaoTalk_20230417_190029478_13.jpg" alt="">
+                </li>
+            </ul>
         </section>
     </main>
 
     <footer>
         <dl>
-            <dt>현장명: 월드메르디앙 소사역</dt>
-            <dt>담당자: 전명진</dt>
-            <dt>담당자번호: 0000-0000</dt>
+            <dt>현장명: 월드메르디앙 소사역 | 현장주소: 서울시 소사역 뭐시기 | 담당자번호: 1661-3822</dt>
+            <dt>사이트제작: limk10tj@gmail.com</dt>
             <dt>Copyright © 2023 월드메르디앙 소사역. All Rights Reserved.</dt>
         </dl>
     </footer>
     <script src="/JS/main.js"></script>
+    <script src="/JS/scroll.js"></script>
+    <!-- <script src="/JS/form.js"></script> -->
 </body>
 
 </html>
