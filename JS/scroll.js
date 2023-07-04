@@ -3,22 +3,28 @@ const menuWarp = document.querySelector('.menu-list')
 const mainContent = document.querySelector('.main-content')
 const menuList = menuWarp.querySelectorAll('li')
 const contents = mainContent.querySelectorAll('li')
-console.log(contents)
 const menuLen = menuList.length
 const topIcon = document.querySelector('#top-icon')
+const mobileLi = document.querySelectorAll('.mobileMenuList > li')
 
 // 메뉴 스크롤
 function goToScroll (offset){
     window.scrollTo({top: offset - 100, behavior: 'smooth'})
 }
 
+// 스크롤 이벤트
 for (let i = 0; i < menuLen; i++) {
+    
     menuList[i].addEventListener("click", () => {
         let offset = contents[i].offsetTop
         goToScroll(offset)
     })
-}
 
+    mobileLi[i].addEventListener("click", () => {
+        let offset = contents[i].offsetTop
+        goToScroll(offset)
+    })
+}
 
 // top 아이콘 화면 노출 이벤트
 let contentOffset = (mainContent.offsetTop) - 700;

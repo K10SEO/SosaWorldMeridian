@@ -14,24 +14,32 @@
     <header>
         <h1 class="ir-hidden">월드메르디앙</h1>    
         
-        <a href="#">
-            <img class="main-logo" src="/src/image/LOGO/20221117 - mainLogo2.png" alt="월드메르디앙 로고">
-        </a>
-        <nav class="menu">
-            <ul class="menu-list">
-                <li>사업개요</li>
-                <li>입지환경</li>
-                <li>개발호재</li>
-                <li>타입안내</li>
-                <li>모델하우스</li>
-                <!-- <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li> -->
+        <section class="top-menuBar">
+            <a href="#">
+                <img class="main-logo" src="/src/image/LOGO/20221117 - mainLogo2.png" alt="월드메르디앙 로고">
+            </a>
+            <nav class="menu">
+                <ul class="menu-list">
+                    <li>사업개요</li>
+                    <li>입지환경</li>
+                    <li>개발호재</li>
+                    <li>타입안내</li>
+                    <li>모델하우스</li>
+                </ul>
+            </nav>
+            <a href="tel:1661-3882" class="tell-number">1661-3822</a>
+            <img class="menu-icon" src="src/image/icon/menu.png" alt="">
+        </section>
+
+        <div class="mobile-menu">
+            <ul class="mobileMenuList">
+                <li>- 사업개요</li>
+                <li>- 입지환경</li>
+                <li>- 개발호재</li>
+                <li>- 타입안내</li>
+                <li>- 모델하우스</li>
             </ul>
-        </nav>
-        <a href="tel:1661-3882" class="tell-number">1661-3822</a>
+        </div>
         <img id="top-icon" class="ir-hidden" src="/src/image/icon/expand_less_FILL0_wght100_GRAD0_opsz48.svg">
     </header>
 
@@ -43,7 +51,7 @@
                 <li class="slide-content item2"></li> -->
                 <ul class="slide-pagination"></ul>
             </ul>
-            <div class="slide-img">
+            <div class="slide-topImg">
                 <img src="./src/image/미래비전시작.png" alt="">
                 <a href="tel:1661-3882">
                     <img src="./src/image/LOGO/상담문의로고.png" alt="">
@@ -52,48 +60,44 @@
         </div>
         <section class="main-content">
             <h1 class="ir-hidden">상품 소개</h1>
-            <div>
-                <img src="./src/image/프리미엄.png" alt="">
-                <a href="tel:1661-3882">
-                    <img class="logo-tell" src="./src/image/LOGO/상담문의로고.png" alt="">
-                </a>
+            <img src="./src/image/프리미엄.png" alt="">
+            <a href="tel:1661-3882">
+                <img class="logo-tell" src="./src/image/LOGO/상담문의로고.png" alt="">
+            </a>
 
-                <form class="contact-form" method="POST" data-email="dlawhdtj9801@gmail.com" action="https://script.google.com/macros/s/AKfycbyvwuek9UE_9B0mb89yuRdQvT6KkvXPfKmcHPgga7vxveqIehdxW8KYXCjBzOHnfE5Y/exec" >
-                    <h1>상담 예약 신청</h1>
-                    <div id="privacy">
-                        <p>
-                            1. 개인정보 수집 목적
-                            <br>
-                            문의 내역으로 상담
-                            <br>
-                            2. 개인정보 수집 항목
-                            <br>
-                            3. 개인정보 보유 및 이용기간
-                        </p>
-                    </div>
-                    <label class="checkBox-privacy" for="privacy-check" >
-                        <input id="privacy-check" type="checkbox" >
-                        위 사항을 확인하였으며 개인정보 수집 및 이용에 동의 합니다.
-                    </label>
+            <!-- <form class="contact-form" method="POST"data-email="dlawhdtj9801@gmail.com" action="https://scriptgoogle.com/macros/sAKfycbyvwuek9UE_9B0mb89yuRdQvT6KkvXPfKmcHPgga7vxveqIehdxW8YXCjBzOHnfE5Y/exec" >
+                <h1>상담 예약 신청</h1>
+                <div id="privacy">
+                    <p>
+                        1. 개인정보 수집 목적
+                        <br>
+                        문의 내역으로 상담
+                        <br>
+                        2. 개인정보 수집 항목
+                        <br>
+                        3. 개인정보 보유 및 이용기간
+                    </p>
+                </div>
+                <label class="checkBox-privacy" for="privacy-check" >
+                    <input id="privacy-check" type="checkbox" >
+                    위 사항을 확인하였으며 개인정보 수집 및 이용에 동의 합니다.
+                </label>
 
-                    <label for="contact">
-                        <span>*</span>
-                        연락처
-                    </label>
-                    <input id="contact" type="number" name="tellNumber" required>
+                <label for="contact">
+                    <span>*</span>
+                    연락처
+                </label>
+                <input id="contact" type="number" name="tellNumber"required>
+                <label for="consultation">
+                    <span>*</span>
+                    상담 내용
+                </label>
+                <textarea name="consultation" id="consultation"cols="30" rows="10" required></textarea>
+                <input type="submit">
 
-                    <label for="consultation">
-                        <span>*</span>
-                        상담 내용
-                    </label>
-                    <textarea name="consultation" id="consultation" cols="30" rows="10" required></textarea>
+            </form> -->
 
-                    <input type="submit">
-
-                </form>
-
-            </div>
-            <ul>
+            <ul class="content-list">
                 <li>
                     <h2>
                         <img src="./src/image/LOGO/레이어 3.png" alt="">
@@ -161,9 +165,9 @@
             <dt>Copyright © 2023 월드메르디앙 소사역. All Rights Reserved.</dt>
         </dl>
     </footer>
-    <script src="/JS/main.js"></script>
+    <script src="/JS/main.js"></script> 
     <script src="/JS/scroll.js"></script>
-    <!-- <script src="/JS/form.js"></script> -->
+    <script src="/JS/menuDrop.js"></script>
 </body>
 
 </html>
