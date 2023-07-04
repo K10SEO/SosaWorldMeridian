@@ -383,7 +383,7 @@ footer dl {
 
     .content-list li {
         text-align: center;
-        padding-bottom: 5px;
+        padding:0 0 5px;
     }
 
     .content-list li h2{
