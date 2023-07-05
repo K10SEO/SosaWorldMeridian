@@ -16,6 +16,34 @@
     font-style: normal;
 }
 
+@keyframes dropdown {
+    from {
+        transform: translateY(-220px);
+    }
+    to {
+        transform: translateY(0px);
+    }
+    
+}
+
+@keyframes dropdownReverse {
+    from{
+        transform: translateY(0px);
+    }
+    to{
+        transform: translateY(-220px);
+    }
+}
+
+@keyframes logoBackgroundColor {
+    from{
+        background-color: white;
+    }
+    to{
+        background-color: yellow;
+    }
+}
+
 header{
     width: 100%;
     position: fixed;
@@ -188,10 +216,16 @@ header{
 .logo-tell {
     width: 40rem;
     cursor: pointer;
-    border: 3px solid black;
     padding: 20px 30px 30px;
     border-radius: 50px 50px 50px 50px;
     margin-top: 50px;
+    animation: logoBackgroundColor 2s infinite;
+    box-shadow: 3px 3px 6px 2px #8a8c91;
+}
+
+.impo{
+    margin-top: 10px;
+    font-size: 0.7rem;
 }
 
 .top-icon{
@@ -207,11 +241,15 @@ header{
 }
 
 footer{
-    background-color: rgb(36, 45, 77);
+    background-color: rgb(86, 94, 126);
     color: white;
     text-align: center;
     overflow: hidden;
-    padding: 70px;
+    padding: 50px;
+
+    & > img {
+        width: 200px;
+    }
 }
 
 footer dl {
@@ -219,7 +257,23 @@ footer dl {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 5px;
+    margin-top: 20px;
+}
+
+.copyright-produce{
+    margin-top: 20px;
+
+    & > li {
+        font-size: 0.8rem;
+    }
+
+    & > li:nth-child(2){
+        margin-top: 20px;
+        font-size: 0.3rem;
+        color: gray;
+    }
+    
 }
 
 .contact-form {
@@ -297,24 +351,7 @@ footer dl {
 }
 
 
-@keyframes dropdown {
-    from {
-        transform: translateY(-220px);
-    }
-    to {
-        transform: translateY(0px);
-    }
-    
-}
 
-@keyframes dropdownReverse {
-    from{
-        transform: translateY(0px);
-    }
-    to{
-        transform: translateY(-220px);
-    }
-}
 
 @media screen and (max-width:412px){
 
