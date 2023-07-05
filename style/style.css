@@ -223,9 +223,10 @@ header{
     box-shadow: 3px 3px 6px 2px #8a8c91;
 }
 
-.impo{
-    margin-top: 10px;
-    font-size: 0.7rem;
+.logoTell-detail{
+    margin-top: 20px;
+    font-size: 1.5rem;
+    color: gray;
 }
 
 .top-icon{
@@ -463,6 +464,11 @@ footer dl {
 
     .tell-number{
         font-size: 1.5rem;
+    }
+    
+    .logoTell-detail{
+        font-size: 0.7rem;
+        margin-top: 10px;
     }
 }
 
