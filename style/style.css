@@ -40,7 +40,7 @@
         background-color: white;
     }
     to{
-        background-color: yellow;
+        background-color: orange;
     }
 }
 
@@ -190,7 +190,8 @@ header{
     }
 }
 
-.main-content li {
+.content-list li {
+    
     padding: 100px 100px 0;
     & > img {
         margin-top: 50px;
@@ -219,7 +220,7 @@ header{
     padding: 20px 30px 30px;
     border-radius: 50px 50px 50px 50px;
     margin-top: 50px;
-    animation: logoBackgroundColor 2s infinite;
+    animation: logoBackgroundColor 1.3s infinite;
     box-shadow: 3px 3px 6px 2px #8a8c91;
 }
 
@@ -271,7 +272,7 @@ footer dl {
 
     & > li:nth-child(2){
         margin-top: 20px;
-        font-size: 0.3rem;
+        font-size: 0.8rem;
         color: gray;
     }
     
@@ -354,7 +355,7 @@ footer dl {
 
 
 
-@media screen and (max-width:412px){
+@media screen and (max-width:450px){
 
     .top-menuBar{
         padding: 5px;
