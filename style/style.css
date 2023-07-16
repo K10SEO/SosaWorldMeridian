@@ -192,10 +192,20 @@ header{
 .content-list li {
     
     padding: 100px 100px 0;
-    & > img {
-        margin-top: 50px;
-        width: 80rem;
+    
+
+    & > div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        & > img {
+            margin-top: 50px;
+            width: 80rem;
+        }
     }
+
     & > h2 {
         width: 350px;
         font-size: 30px;
