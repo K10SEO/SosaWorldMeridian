@@ -107,7 +107,7 @@ header{
     text-decoration: none;
     color: #ffff;
 }
-/* main 시작 */
+
 .warp {
     margin-top: 91px;
     font-family: 'TAEBAEKmilkyway';
@@ -115,7 +115,6 @@ header{
     
 }
 
-/* 슬라이드 스타일 */
 .slide-wrap {
     width: 100%;
     height: calc(100vh - 91px);
@@ -355,7 +354,7 @@ footer dl {
 
 
 
-@media screen and (max-width:450px){
+@media screen and (max-width:768px){
 
     .top-menuBar{
         padding: 5px;
