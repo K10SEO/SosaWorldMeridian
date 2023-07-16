@@ -432,6 +432,10 @@ footer dl {
     .content-list li {
         text-align: center;
         padding: 70px 0 0;
+
+        & > div img {
+            width: 25rem;
+        }
     }
 
     .content-list li h2{
