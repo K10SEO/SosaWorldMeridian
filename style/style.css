@@ -182,10 +182,16 @@ header{
     justify-content: center;
     align-items: center;
     & > img {
-        width: 80rem;
+        padding: 0 10rem;
+        width: 100%;
     }
-    & a > img {
-        width: 50rem;
+    & > a {
+        width: 100%;
+        padding: 0 20rem;
+
+        & > img {
+        width: 100%;
+        }
     }
 }
 
@@ -202,7 +208,7 @@ header{
 
         & > img {
             margin-top: 50px;
-            width: 80rem;
+            width: 100%;
         }
     }
 
@@ -422,20 +428,14 @@ footer dl {
     }
 
     .main-content {
-        & > img, 
-        li > img, 
-        a > img {
-            width: 23rem;
+        & > img, a {
+            padding: 0 2rem;
         }
     }
 
     .content-list li {
         text-align: center;
         padding: 70px 0 0;
-
-        & > div img {
-            width: 25rem;
-        }
     }
 
     .content-list li h2{
