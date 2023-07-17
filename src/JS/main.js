@@ -120,7 +120,6 @@ for (let i = 0; i < slideLen; i++) {
 // 마우스 드래그 이벤트
 // 마우스 드래그 시작 위치 이벤트
 slide.addEventListener("mousedown", (e) => {
-    console.log("mousedown")
     startPoint = e.pageX; // 드래그 시작 위치 
 });
 
