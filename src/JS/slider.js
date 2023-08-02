@@ -9,7 +9,7 @@ let endPoint = 0;
 // image 클론 생성
 for(let i = 1; i <= sliderImgLength;){
     const img = new Image();
-    img.src = `./assets/월드메홈${i}.jpg`
+    img.src = `/src/assets/월드메홈${i}.jpg`
 
     if (i === 1){
         sliderShowBox.appendChild(img)
