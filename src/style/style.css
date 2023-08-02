@@ -498,11 +498,11 @@ footer dl {
 @media screen and (max-width:420px){
     /* header */
     .main-logo{
-        width: 120px;
+        width: 130px;
     }
 
     .tell-number{
-        font-size: 20px;
+        font-size: 25px;
     }
 
     .menu-icon{
@@ -516,19 +516,19 @@ footer dl {
 
     /* main */
     .slide-topImg img{
-        width: 200px;
+        width: 250px;
     }
 
     .slide-topImg a img{
-        width: 100px;
+        width: 150px;
     }
 
     .main-content img{
-        width: 280px;
+        width: 350px;
     }
 
     #logo-tell{
-        width: 200px;
+        width: 230px;
     }
     /* main */
 
