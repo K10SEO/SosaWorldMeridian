@@ -44,52 +44,53 @@
     </header>
 
     <main class="warp">
-        <div class="slide-wrap">
-            <ul class="slide-list">
-                <ul class="slide-pagination"></ul>
-            </ul>
+        <section class="slider">
+            <div class="image-box move">
+                <img src="./assets/월드메홈1.jpg" alt="">
+                <img src="./assets/월드메홈2.jpg" alt="">
+            </div>
             <div class="slide-topImg">
                 <img src="/src/assets/미래비전시작.png" alt="">
                 <a href="tel:1661-3822">
                     <img src="/src/assets/LOGO/상담문의로고.png" alt="">
                 </a>
             </div>
-        </div>
+        </section>
         <section class="main-content">
             <h1 class="ir-hidden">상품 소개</h1>
             <img src="/src/assets/프리미엄.png" alt="">
-            <a href="tel:1661-3822">
-                <img class="logo-tell" src="/src/assets/LOGO/상담문의로고.png" alt="">
+            <a id="banner-cover" href="tel:1661-3822">
+                <img id="logo-tell" src="/src/assets/LOGO/상담문의로고.png" alt="">
             </a>
             <p class="logoTell-detail">*사이트 내, 모든 번호들은 클릭시 바로 상담전화를 하실 수 있습니다.</p>
 
-            <ul class="content-list">
-                <li>
+            <!-- <ul class="content-list"> -->
+                <article>
                     <h2>
-                        <img src="/src/assets/LOGO/레이어 3.png" alt="">
-                        <span>사업개요</span>
+                        <img src="/src/assets/LOGO/메르디안.png" alt="">
+                        <span>| 사업개요</span>
                     </h2>
                     <div>
                         <img src="/src/assets/월드메홈2.jpg" alt="">
                         <img src="/src/assets/사업개요/사업개요.png" alt="">
                         <img src="/src/assets/사업개요/배치도.png" alt="">
                     </div>
-                </li>
-                <li>
+                </article>
+                <article>
                     <h2>
-                        <img src="/src/assets/LOGO/레이어 3.png" alt="">
-                        <span>입지환경</span>
+                          <img src="/src/assets/LOGO/메르디안.png" alt="">
+                        <span>| 입지환경</span>
                     </h2>
                     <div>
                         <img src="/src/assets/입지환경/교통망.png" alt="">
                         <img src="/src/assets/입지환경/인프라.png" alt="">
                         <img src="/src/assets/입지환경/미래가치.png" alt="">
                     </div>
-                </li>
-                <li>
+                </article>
+                <article>
                     <h2>
-                        <img src="/src/assets/LOGO/레이어 3.png" alt="">
-                        <span>개발호재</span>
+                          <img src="/src/assets/LOGO/메르디안.png" alt="">
+                        <span>| 개발호재</span>
                     </h2>
                     <div>
                         <img src="/src/assets/개발호재/지하철.png" alt="">
@@ -99,11 +100,11 @@
                         <img src="/src/assets/개발호재/경인고속도로.png" alt="">
                         <img src="/src/assets/개발호재/부천대장지구.png" alt="">
                     </div>
-                </li>
-                <li>
+                </article>
+                <article>
                     <h2>
-                        <img src="/src/assets/LOGO/레이어 3.png" alt="">
-                        <span>타입안내</span>
+                          <img src="/src/assets/LOGO/메르디안.png" alt="">
+                        <span>| 타입안내</span>
                     </h2>
                     <div>
                         <img src="/src/assets/타입안내/62A.png" alt="">
@@ -113,11 +114,11 @@
                         <img src="/src/assets/타입안내/59E.png" alt="">
                         <img src="/src/assets/타입안내/62F.png" alt="">
                     </div>
-                </li>
-                <li>
+                </article>
+                <article>
                     <h2>
-                        <img src="/src/assets/LOGO/레이어 3.png" alt="">
-                        <span>모델하우스</span>
+                          <img src="/src/assets/LOGO/메르디안.png" alt="">
+                        <span>| 모델하우스</span>
                     </h2>
                     <div>
                         <img src="/src/assets/모델하우스/KakaoTalk_20230417_190029478_01.jpg" alt="">
@@ -129,30 +130,27 @@
                         <img src="/src/assets/모델하우스/KakaoTalk_20230417_190029478_11.jpg" alt="">
                         <img src="/src/assets/모델하우스/KakaoTalk_20230417_190029478_13.jpg" alt="">
                     </div>
-                </li>
-            </ul>
+                </article>
+            <!-- </ul> -->
         </section>
     </main>
 
     <footer>
         <img src="/src/assets/LOGO/20221117 - mainLogo2.png" alt="">
         <dl>
-            <dt>월드메르디앙 소사역</dt>
+            <dt>현장명: 월드메르디앙 소사역</dt>
             <dt>현장주소: 경기도 부천시 심곡본동 776-2</dt>
             <dt>담당자번호: 1661-3822</dt>
             <dt></dt>
         </dl>
-        <ul class="copyright-produce">
-            <li>
-                <small>Copyright © 2023 월드메르디앙 소사역. All Rights Reserved.</small>
-            </li>
-            <li>
-                <small>분양홈페이지 제작 문의: limk10tj@gmail.com</small>
-            </li>
-        </ul>
+        <div class="copyright-produce">     
+            <small>Copyright © 2023 월드메르디앙 소사역. All Rights Reserved.</small>
+            <br>
+            <small id="makeSite-contact">분양홈페이지 제작 문의: limk10tj@gmail.com</small>   
+        </div>
 
     </footer>
-    <script src="/src/JS/main.js"></script> 
+    <script src="/src/JS/slider.js"></script>
     <script src="/src/JS/scroll.js"></script>
     <script src="/src/JS/menuDrop.js"></script>
 </body>

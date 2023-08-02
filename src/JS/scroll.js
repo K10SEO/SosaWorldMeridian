@@ -2,7 +2,7 @@
 const menuWarp = document.querySelector('.menu-list')
 const mainContent = document.querySelector('.main-content')
 const menuList = menuWarp.querySelectorAll('li')
-const contents = mainContent.querySelectorAll('li')
+const contents = mainContent.querySelectorAll('article')
 const menuLen = menuList.length
 const topIcon = document.querySelector('#top-icon')
 const mobileLi = document.querySelectorAll('.mobileMenuList > li')
