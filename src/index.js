@@ -1,4 +1,4 @@
-import main from './JS/main'
+import slider from './JS/slider'
 import scroll from "./JS/scroll"
 import menuDrop from "./JS/menuDrop"
 import "./style/reset.css"
