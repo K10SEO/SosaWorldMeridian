@@ -27,17 +27,17 @@ for (let i = 0; i < menuLen; i++) {
 }
 
 // top 아이콘 화면 노출 이벤트
-let contentOffset = (mainContent.offsetTop) - 700;
+// let contentOffset = (mainContent.offsetTop) - 700;
 
-window.addEventListener("scroll", () => {
-    if(window.scrollY >= contentOffset) {
-        topIcon.classList.remove("ir-hidden")
-        topIcon.classList.add("top-icon")
-    } else if (window.scrollY < contentOffset) {
-        topIcon.classList.remove("top-icon")
-        topIcon.classList.add("ir-hidden")
-    }
-})
+// window.addEventListener("scroll", () => {
+//     if(window.scrollY >= contentOffset) {
+//         topIcon.classList.remove("ir-hidden")
+//         topIcon.classList.add("top-icon")
+//     } else if (window.scrollY < contentOffset) {
+//         topIcon.classList.remove("top-icon")
+//         topIcon.classList.add("ir-hidden")
+//     }
+// })
 
 // top 아이콘 클릭시 상단 이동 이벤트
 topIcon.addEventListener("click", () => {

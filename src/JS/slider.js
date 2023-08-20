@@ -1,6 +1,7 @@
 const slider = document.querySelector(".slider")
 const sliderShowBox = slider.querySelector(".image-box")
 const sliderImg = slider.querySelectorAll(".image-box > img")
+const arrowButton = slider.querySelectorAll(".arrow")
 const sliderImgLength = sliderImg.length
 
 let startPoint = 0;
@@ -19,7 +20,6 @@ for(let i = 1; i <= sliderImgLength;){
 
     i++;
 }
-
 // slider offset
 let curIndex = 1;
 function offset(curIndex){
@@ -30,10 +30,8 @@ function offset(curIndex){
 function moveSetting (offset, num){
     sliderShowBox.setAttribute('style', `transform: translateX(${!!offset ? -offset : 0}%); transition: ${!!num ? num : null}s;`)
 
-    sliderShowBox.removeEventListener('mousedown', onScrollStart);
-    sliderShowBox.removeEventListener('mouseup', eventStart);
-    sliderShowBox.removeEventListener('touchstart', onScrollStart);
-    sliderShowBox.removeEventListener('touchend', eventStart)
+    slider.removeEventListener('mousedown', onScrollStart);
+    slider.removeEventListener('mouseup', eventStart);
 
     setTimeout(() => {
         bindEvents();
@@ -81,12 +79,17 @@ function onScrollStart (e){
     startPoint = getClientX(e);
 }
 
+// function buttonEvent(e){
+//     console.dir(e.target);
+// }
+
 // slider move event add
 function bindEvents (){
-    sliderShowBox.addEventListener('mousedown', onScrollStart);
-    sliderShowBox.addEventListener('mouseup', eventStart);
-    sliderShowBox.addEventListener('touchstart', onScrollStart);
-    sliderShowBox.addEventListener('touchend', eventStart);
+    slider.addEventListener('mousedown', onScrollStart);
+    slider.addEventListener('mouseup', eventStart);
+
+    // arrowButton[0].addEventListener('click', buttonEvent)
+    // arrowButton[1].addEventListener('click', buttonEvent)
 };
 bindEvents();
 
