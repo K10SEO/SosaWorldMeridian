@@ -1,8 +1,10 @@
 name: NodeJS with Webpack
 
 on:
+  # main 브랜치에 커밋을 push 할때 마다 실행
   push:
     branches: [ "main" ]
+  # develop 브랜치에 커밋을 pull_request 할때 마다 실행
   # pull_request:
   #   branches: [ "develop" ]
 
@@ -29,11 +31,11 @@ jobs:
     
     - run: npm ci
       if: steps.cache.outputs.cache-hit != 'true'
-    - run: npm run build #package.json에 번들시작 명령어
+    - run: npm run build # package.json에 번들시작 명령어
 
     - uses: peaceiris/actions-gh-pages@v3
-      if: github.ref == 'refs/heads/main' #현재 분기 지점을 확인, 현재 분기지점이 맞다면 true 이후 작업 진행
+      if: github.ref == 'refs/heads/main' # 현재 분기 지점을 확인, 현재 분기지점이 맞다면 true 이후 작업 진행
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        # publish_branch: main #배포될(push) 브랜치 지정
+        # publish_branch: main #배포될(push) 브랜치 지정? ㄴㄴ 잘모르겠음
         publish_dir: ./dist #번들링 후 배포될(push) 소스 디렉터리 (번들 파일만 푸시 하는듯)
