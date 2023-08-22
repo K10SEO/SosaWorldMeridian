@@ -32,7 +32,7 @@ jobs:
     - run: npm run build
 
     - uses: peaceiris/actions-gh-pages@v3
-      if: github.ref == 'refs/heads/main'
+      if: github.ref == 'refs/heads/main' #현재 분기 지점을 확인, 현재 분기지점이 맞다면 true 이후 작업 진행
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_branch: main
